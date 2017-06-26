@@ -1,0 +1,35 @@
+{
+    "name": "hareku/laravel-profile-image",
+    "description": "Laravel 5 user profile image system",
+    "keywords": ["laravel", "profile", "image"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hareku",
+            "email": "hareku908@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/cache": ">=5.4",
+        "illuminate/config": ">=5.4",
+        "illuminate/database": ">=5.4",
+        "illuminate/filesystem": ">=5.4",
+        "illuminate/http": ">=5.4",
+        "illuminate/support": ">=5.4",
+        "intervention/image": "^2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hareku\\LaravelProfileImage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hareku\\LaravelProfileImage\\Tests\\": "tests/"
+        }
+    }
+}
