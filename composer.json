@@ -1,6 +1,6 @@
 {
     "name": "hareku/laravel-profile-image",
-    "description": "Laravel 5 user profile image system",
+    "description": "Laravel 5 profile image system",
     "keywords": ["laravel", "profile", "image"],
     "license": "MIT",
     "authors": [
