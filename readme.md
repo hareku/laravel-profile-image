@@ -35,9 +35,9 @@ use App\User;
 
 return [
     User::class => [
-       'extension' => 'jpg',
-       'directory' => 'user-profile-images',
-       'default_image_name' => 'default.jpg',
+        'extension' => 'jpg',
+        'directory' => 'user-profile-images',
+        'default_image_name' => 'default.jpg',
         'types' => [
             'original' => [
                 'directory' => 'original',

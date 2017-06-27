@@ -12,11 +12,11 @@ return [
 
     User::class => [
 
-       'extension' => 'jpg',
+        'extension' => 'jpg',
 
-       'directory' => 'user-profile-images',
+        'directory' => 'user-profile-images',
 
-       'default_image_name' => 'default.jpg',
+        'default_image_name' => 'default.jpg',
 
         'types' => [
 
