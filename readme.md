@@ -63,7 +63,7 @@ return [
 
 ### Example Contnroller
 
-Example is here. [UserProfileImageController](example/UserProfileImageController.php)
+Example is here. [UserProfileImageController](examples/UserProfileImageController.php)
 
 ### Get user profile image URL list
 
