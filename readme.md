@@ -35,9 +35,9 @@ use App\User;
 
 return [
     User::class => [
-       'extension' => 'jpg',
-       'directory' => 'user-profile-images',
-       'default_image_name' => 'default.jpg',
+        'extension' => 'jpg',
+        'directory' => 'user-profile-images',
+        'default_image_name' => 'default.jpg',
         'types' => [
             'original' => [
                 'directory' => 'original',
@@ -63,7 +63,7 @@ return [
 
 ### Example Contnroller
 
-Example is here. [UserProfileImageController](example/UserProfileImageController.php)
+Example is here. [UserProfileImageController](examples/UserProfileImageController.php)
 
 ### Get user profile image URL list
 
@@ -71,10 +71,10 @@ Example is here. [UserProfileImageController](example/UserProfileImageController
 $this->profileImage->urlSet(get_class($user), $user->id);
 
 [
-    'original_image_url' => '/storage/user-profile-images/original/1.jpg',
-    'bigger_image_url' => '/storage/user-profile-images/bigger/1.jpg',
-    'normal_image_url' => '/storage/user-profile-images/normal/1.jpg',
-    'mini_image_url' => '/storage/user-profile-images/mini/1.jpg',
+    'original' => '/storage/user-profile-images/original/1.jpg',
+    'bigger' => '/storage/user-profile-images/bigger/1.jpg',
+    'normal' => '/storage/user-profile-images/normal/1.jpg',
+    'mini' => '/storage/user-profile-images/mini/1.jpg',
 ]
 ```
 
