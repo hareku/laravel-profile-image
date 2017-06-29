@@ -71,10 +71,10 @@ Example is here. [UserProfileImageController](examples/UserProfileImageControlle
 $this->profileImage->urlSet(get_class($user), $user->id);
 
 [
-    'original_image_url' => '/storage/user-profile-images/original/1.jpg',
-    'bigger_image_url' => '/storage/user-profile-images/bigger/1.jpg',
-    'normal_image_url' => '/storage/user-profile-images/normal/1.jpg',
-    'mini_image_url' => '/storage/user-profile-images/mini/1.jpg',
+    'original' => '/storage/user-profile-images/original/1.jpg',
+    'bigger' => '/storage/user-profile-images/bigger/1.jpg',
+    'normal' => '/storage/user-profile-images/normal/1.jpg',
+    'mini' => '/storage/user-profile-images/mini/1.jpg',
 ]
 ```
 

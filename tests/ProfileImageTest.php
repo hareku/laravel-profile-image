@@ -54,10 +54,10 @@ class ProfileImageTest extends TestCase
         $class->setHasProfileImage(User::class, 1, true);
 
         $this->assertSame($class->urlSet(User::class, 1), [
-            'original_image_url' => '/storage/user-profile-images/original/1.jpg',
-            'bigger_image_url' => '/storage/user-profile-images/bigger/1.jpg',
-            'normal_image_url' => '/storage/user-profile-images/normal/1.jpg',
-            'mini_image_url' => '/storage/user-profile-images/mini/1.jpg',
+            'original' => '/storage/user-profile-images/original/1.jpg',
+            'bigger' => '/storage/user-profile-images/bigger/1.jpg',
+            'normal' => '/storage/user-profile-images/normal/1.jpg',
+            'mini' => '/storage/user-profile-images/mini/1.jpg',
         ]);
     }
 
@@ -67,10 +67,10 @@ class ProfileImageTest extends TestCase
     public function testDefaultUrlSet()
     {
         $this->assertSame(resolve(ProfileImageContract::class)->defaultUrlSet(User::class), [
-            'original_image_url' => '/storage/user-profile-images/original/default.jpg',
-            'bigger_image_url' => '/storage/user-profile-images/bigger/default.jpg',
-            'normal_image_url' => '/storage/user-profile-images/normal/default.jpg',
-            'mini_image_url' => '/storage/user-profile-images/mini/default.jpg',
+            'original' => '/storage/user-profile-images/original/default.jpg',
+            'bigger' => '/storage/user-profile-images/bigger/default.jpg',
+            'normal' => '/storage/user-profile-images/normal/default.jpg',
+            'mini' => '/storage/user-profile-images/mini/default.jpg',
         ]);
     }
 

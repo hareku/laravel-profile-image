@@ -143,7 +143,7 @@ class ProfileImage implements ProfileImageContract
         $urlSet = [];
 
         foreach ($modelConfig->types() as $type) {
-            $urlSet[$this->urlSetKey($type)] = $this->url($modelConfig, $type, $id);
+            $urlSet[$type->name()] = $this->url($modelConfig, $type, $id);
         }
 
         return $urlSet;
@@ -161,21 +161,10 @@ class ProfileImage implements ProfileImageContract
         $urlSet = [];
 
         foreach ($modelConfig->types() as $type) {
-            $urlSet[$this->urlSetKey($type)] = $this->defaultUrl($modelConfig, $type);
+            $urlSet[$type->name()] = $this->defaultUrl($modelConfig, $type);
         }
 
         return $urlSet;
-    }
-
-    /**
-     * Get a key for url set.
-     *
-     * @param  Type  $type
-     * @return string
-     */
-    protected function urlSetKey(Type $type): string
-    {
-        return $type->name().'_image_url';
     }
 
     /**
