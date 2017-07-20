@@ -100,7 +100,6 @@ class ProfileImage implements ProfileImageContract
 
         $image->destroy();
 
-        fclose($resource);
         unlink($temporaryFilePath);
     }
 
