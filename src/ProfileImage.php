@@ -177,7 +177,10 @@ class ProfileImage implements ProfileImageContract
      */
     protected function url(ModelConfig $modelConfig, Type $type, $id): string
     {
-        return $this->fileSystem->url($this->imagePath($modelConfig, $type, $id));
+        $url = $this->fileSystem->url($this->imagePath($modelConfig, $type, $id));
+        $query = http_build_query(['uniqid' => uniqid()]);
+
+        return "{$url}?{$query}";
     }
 
     /**
